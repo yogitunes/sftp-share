@@ -17,5 +17,5 @@ This repository contains **Dockerfile** of sftp-share for [Docker](https://www.d
 To launch it and have your share listen on port 2022, just type:
 
 ```
-docker run -d -p 2022:22 -e USER=myuser -e PASS=myverysecretpassword luzifer/sftp-share
+docker run -d -p 2022:22 -e HOME=/path/to/home -e USER=myuser -e PASS=myverysecretpassword luzifer/sftp-share
 ```
